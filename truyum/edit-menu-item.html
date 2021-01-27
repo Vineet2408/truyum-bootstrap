@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style/style.css">
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <script type="text/javascript" src="js/myscript.js"> </script>
+</head>
+
+    <body>
+        <header>
+            <div class="jumbotron-fluid bg-danger text-white">
+                <nav class="navbar navbar-expand-md navbar-dark bg-danger text-white" id="navbar">
+                    <a href="" class="navbar-brand"><i class="material-icons">local_dining</i>truYum</a>
+                    <button class="navbar-toggler" data-toggle="collapse" data-target="#truyumbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="container">
+                        <div class="collapse navbar-collapse" id="truyumbar">
+                            <ul class="navbar-nav ml-auto">
+                                <li class="nav-item"><a href="menu-item-list-customer.html" class="nav-link">Menu Items</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+             </div>
+        
+        
+        </header>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h1 class="py0" id="tabletitle2" class="td-edit">Edit Menu Item</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <form onsubmit="return validate()">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <label for="name" ><b>Name</b></label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <input class="form-control" type="text" name="title" min="2" max="65" required id="name">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-3"><label>Price</label></div>
+                                <div class="col-lg-3"><label>Date of Launch</label></div>
+                                <div class="col-lg-3"><label>Category</label></div>
+                                <div class="col-lg-3"><label>Active</label></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-3">
+                                    <input class="form-control" type="number" required>
+                                </div>
+                                <div class="col-lg-3">
+                                    <input class="form-control" type="date" name="dateofLaunch" required>
+                                </div>
+                                <div class="col-lg-3">
+                                    <select class="form-control" name="category">
+                                        <option>Starters</option>
+                                        <option>Main Course</option>
+                                        <option>Dessert</option>
+                                        <option>Drinks</option>
+                                    </select>
+                                </div>
+                                <div class="col-lg-3">
+                                    <input type="radio" name="inStock" value="Yes">YES
+                                    <input type="radio" name="inStock" value="No">No
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-3">
+                                     <input type="checkbox" id="free-delivery" name="Free Delivery" value="checked">Free Deliverys
+                                    </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <input class="btn btn-danger" type="submit" name="submit" value="Save" id="edit-submit">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="container-fluid text-center bg-danger text-white">
+                Copyright &copy; 2019
+            </div>
+        </footer>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  
+    </body>
+
+</html>
